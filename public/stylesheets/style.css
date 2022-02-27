@@ -1,0 +1,21 @@
+body {
+  
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.container{
+  padding:15px;
+}
+.footer-copyright{
+  
+    position: sticky;
+    top:100%;
+    bottom:0;
+    width: 100%;
+    
+}
+
+a {
+  color: #00B7FF;
+}
+
+

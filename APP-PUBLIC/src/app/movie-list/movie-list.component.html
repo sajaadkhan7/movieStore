@@ -1,0 +1,10 @@
+<br>
+<div class="container p-4">
+<h1 class="text-center">Movie List</h1>
+    <ul class="list-group list-group-flush shadow">
+        <li class="list-group-item p-4" *ngFor="let movie of movies;">Movie name: <a routerLink="/movies/{{movie._id}}">{{movie.name}}</a></li>
+    </ul>
+</div>
+
+
+

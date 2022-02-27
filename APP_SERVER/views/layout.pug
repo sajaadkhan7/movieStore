@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title= title
+    
+    link(rel='stylesheet',href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+   
+  body
+   nav.navbar.navbar-expand.bg-dark.navbar-dark
+    a.navbar-brand(href='/') MovieStore
+    div
+     ul.navbar-nav
+       li.nav-item
+         a.nav-link(href='/list') List
+       li.nav-item
+         a.nav-link(href='/display') Display
+       li.nav-item
+         a.nav-link(href='/new') Create New
+       li.nav-item
+         a.nav-link(href='/about') About
+      
+     
+   div.container
+    block content
+
+   footer.footer-copyright.text-center.py-3.bg-dark.navbar-dark.text-white
+    |  &copy; 2021 Copyright  
+    a(href='/')  Moviestore.com

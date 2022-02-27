@@ -1,0 +1,41 @@
+<h1 class="text-center m-3">Create new Movie </h1>
+
+<form (ngSubmit)="createNewMovie(newMovie)" class="container">
+    <span class="text-danger">Fields marked with (*) are required</span>
+    <div class="form-group ">
+    <label class="required" for="name">Movie Name</label>
+    <input autofocus class="form-control"  [(ngModel)]="newMovie.name" id="name" name="name" required >
+    </div>
+   
+    <div class="form-group">
+    <label class="required" for="director">Director Name</label>
+    <input class="form-control" [(ngModel)]="newMovie.director" id="director" name="director" required>
+        </div>
+
+    <div class="form-group">
+    <label for="actorName">Actor Name</label>
+    <input class="form-control" [(ngModel)]="newMovie.actor.name" id="actorName" name="actorName" >
+        </div>
+
+        <div class="form-group">
+    <label for="actorAge">Actor Age</label>
+    <input type="number" class="form-control" [(ngModel)]="newMovie.actor.age" id="actorAge" name="actorAge" >
+            </div>
+    
+    <div class="form-group">
+    <label for="actorStatus">Actor Status</label>
+    <input class="form-control" [(ngModel)]="newMovie.actor.status" id="actorStatus" name="actorStatus" >
+    </div>
+
+    <div class="form-group">
+    <label for="rating">Rating</label>
+    <input class="form-control" [(ngModel)]="newMovie.rating" type="number" id="rating" name="rating" required min="0" max="5">
+        </div>
+   
+        <div class="form-group">
+    <label class="required" for="release_date">Release Date</label>
+    <input class="form-control" [(ngModel)]="newMovie.release_date" type="date" id="release_date" name="release_date" required>   
+    </div>
+
+    <button class="btn btn-success col-md-12" type="submit">Create</button>
+</form>

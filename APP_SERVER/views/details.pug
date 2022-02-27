@@ -1,0 +1,37 @@
+extends layout
+
+block content
+ br
+ h1
+  | Details of 
+  span.display-4.text-success=cMovie.name
+  |  Movie
+ br
+ br
+ table.table.table-striped
+  tbody
+    tr
+     th(scope='row') Movie Name
+     td=cMovie.name
+    tr 
+     th(scope='row') Director
+     td=cMovie.director 
+    tr 
+     th(scope='row') Actor name
+     td=cMovie.actor[0].name
+    tr 
+     th(scope='row') Actor Age
+     td=cMovie.actor[0].age
+    tr 
+     th(scope='row') Merried Status
+     td=cMovie.actor[0].status
+    tr 
+     th(scope='row') Rating
+     td=cMovie.rating 
+    tr
+     th(scope='row') Release Date 
+     td=cMovie.release_date 
+ br
+ br
+ br
+ br

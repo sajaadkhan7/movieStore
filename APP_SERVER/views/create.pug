@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  h1=title
+  form(action='' method='POST')
+   .form-group
+    label(for='name') Movie Name:
+    input#name.form-control(type='text' name='name' autofocus='true')
+   .form-group
+    label(for='director') Director:
+    input#director.form-control(type='text' name='director')
+   .form-group
+    label(for='actorName') Actor Name:
+    input#actorName.form-control(type='text' name='actorName')
+   .form-group
+    label(for='age') Actor Age:
+    input#age.form-control(type='number' name='age')
+   .form-group
+    label(for='status') Actor merried Status:
+    input#status.form-control(type='text' name='status')
+   .form-group
+    label(for='rating') Movie Rating:
+    input#rating.form-control(type='number' name='rating' min='1' max='5')
+   .form-group
+    label(for='release_date') Movie Release Date:
+    input#release_date.form-control(type='date' name='release_date')
+   button.btn.btn-success(type='submit') Submit
+
+  
+

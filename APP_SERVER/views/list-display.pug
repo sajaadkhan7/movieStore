@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 Movie List
+  ul.list-group.list-group-flush.shadow
+   each item in movieList
+    li.list-group-item.p-4 Movie Name :<br><br>
+     a(href=`/movies/${item._id}`) #{item.name}
+
+      
+     
+      
+  
