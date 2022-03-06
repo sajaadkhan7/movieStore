@@ -6,7 +6,7 @@ var logger = require('morgan');
 require('./APP_SERVER/models/db');
 var cors=require('cors');
 
-//var indexRouter = require('./APP_SERVER/routes/index');
+//  indexRouter = require('./APP_SERVER/routes/index');
 var usersRouter = require('./APP_SERVER/routes/users');
 
 var apiRouter=require('./APP_API/routes/moviesRoute');
