@@ -22,9 +22,10 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'APP-PUBLIC','build')));
+app.use(express.static(path.join(__dirname, 'APP-PUBLIC', 'build')));
+const port = process.env.PORT || 8080;
 app.use('/api',(req,res,next)=>{
-  res.header('Access-Control-Allow-Origin','http://localhost:4200');
+  res.header('Access-Control-Allow-Origin','http://localhost:'+port);
   res.header('Access_Control-Allow-Headers','Origin, X-Requested-With,Content-Type,Accept');
   next();
 });
